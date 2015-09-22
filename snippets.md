@@ -28,3 +28,10 @@ def post_save(model, os_path, contents_manager):
 
 c.FileContentsManager.post_save_hook = post_save
 ```
+
+## Bash aliases
+
+Grep only in .py and .ipynb files, ignoring IPython Notebook checkpoints.
+```bash
+alias ipygrep='grep --include=\*.py --include=\*.ipynb --exclude-dir=\.ipynb_checkpoints'
+```
